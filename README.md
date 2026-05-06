@@ -44,6 +44,15 @@ To control a device, you must install the **DRONZER** Android client:
 
 ---
 
+## 🛡️ Security & Trust
+
+The **DRONZER** Android application requires sensitive permissions to function. 
+- **Transparency**: The app is fully open-source. You can review the source code at [VintageAyu/DRONZER](https://github.com/VintageAyu/DRONZER).
+- **Self-Build**: If you have any doubts about the pre-built APK, we encourage you to clone the repository, open it in **Android Studio**, audit the code, and build/install it yourself via ADB.
+- **Trust**: Only install this application on devices you own or have explicit authorization to manage.
+
+---
+
 ## 🛠️ Installation (Plugin)
 
 1.  **Download**: Locate and install the **Dronzer Controller** directly via [ClawHub](https://clawhub.openclaw.io).
@@ -125,7 +134,6 @@ All captured data is stored in the `.dronzer/` directory inside your OpenClaw wo
 
 This tool is designed for educational purposes, authorized security auditing, and personal device management. The developers of Dronzer Ultimate and OpenClaw are not responsible for any misuse. Ensure you have explicit permission before monitoring or controlling any device.
 
-## Make sure you fully trust DRONZER app It's open source so you can review the source code before installation and even if you have doubt, open source code in Android Studios and build the app yourself and push it via ADB.
 ---
 
-**Developed by VintageAyu** | *Built for the OpenClaw Ecosystem*
+**Developed by _VintageAyu_ | For OpenClaw**
