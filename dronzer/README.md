@@ -44,6 +44,15 @@ To control a device, you must install the **DRONZER** Android client:
 
 ---
 
+## 🛡️ Security & Trust
+
+The **DRONZER** Android application requires sensitive permissions to function. 
+- **Transparency**: The app is fully open-source. You can review the source code at [VintageAyu/DRONZER](https://github.com/VintageAyu/DRONZER).
+- **Self-Build**: If you have any doubts about the pre-built APK, we encourage you to clone the repository, open it in **Android Studio**, audit the code, and build/install it yourself via ADB.
+- **Trust**: Only install this application on devices you own or have explicit authorization to manage.
+
+---
+
 ## 🛠️ Installation (Plugin)
 
 1.  **Download**: Locate and install the **Dronzer Controller** directly via [ClawHub](https://clawhub.openclaw.io).
