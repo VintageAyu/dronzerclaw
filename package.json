@@ -1,0 +1,24 @@
+{
+  "name": "@openclaw/extension-dronzer",
+  "version": "1.0.0",
+  "description": "Dronzer Android Controller for OpenClaw",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "@openclaw/plugin-sdk": "workspace:*",
+    "typescript": "^5.3.3"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "build": {
+      "openclawVersion": "2026.5.3"
+    },
+    "compat": {
+      "pluginApi": ">=2026.5.3"
+    }
+  }
+}

